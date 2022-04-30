@@ -121,7 +121,7 @@ export default function Post({post} : PostProps): JSX.Element{
                  
                     
 
-                          <div className={styles.contentText} dangerouslySetInnerHTML={{__html: RichText.asHtml(content.body)}} />
+                          <div className={styles.content} dangerouslySetInnerHTML={{__html: RichText.asHtml(content.body)}} />
                            
                 
                       </div>
@@ -172,7 +172,7 @@ export const getStaticProps = async ({params }) => {
     first_publication_date: response.first_publication_date,
     last_publication_date: response.last_publication_date,
     data: {
-      title: RichText.asText(response.data.title),
+      title: response.data.title,
       subtitle: response.data.subtitle,
       author: response.data.author,
       banner: {

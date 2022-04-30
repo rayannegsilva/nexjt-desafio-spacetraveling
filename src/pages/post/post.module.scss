@@ -1,1 +1,67 @@
-// TODO
+.container {
+  margin-bottom: 80px;
+}
+
+.bannerContainer{
+  width: 100%;
+  height: 400px;
+
+  >img{
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+.postContainer{
+  max-width: 721px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  >h1{
+    font-size: 48px;
+  }
+}
+
+.infoContent{
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.infos {
+  display: flex;
+  color: var(--color-info);
+
+  &:nth-child(n+2) {
+    margin-left: 24px;
+  }
+}
+
+.infoText {
+  font-size: 14px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.content {
+  margin: 0 auto;
+  margin-top: 64px;
+  width: 721px;
+
+}
+
+.headingText{
+  font-size: 36px;
+  margin-bottom: 62px;
+}
+
+.contentText{
+  font-size: 18px;
+  font-weight: 400;
+
+  >p:nth-child(n + 1) {
+    margin-bottom: 35px;
+  }
+}

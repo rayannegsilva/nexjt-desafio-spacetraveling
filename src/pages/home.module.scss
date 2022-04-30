@@ -1,1 +1,55 @@
-// TODO
+.hero {
+  margin-top: 65px;
+  margin-bottom: 8px;
+ 
+
+
+ h1 {
+    margin-bottom: 8px;
+  }
+
+  a {
+   
+    transition: filter 0.2s;
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+}
+
+.infoContent {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.infos {
+  display: flex;
+
+
+  &:nth-child(n+2) {
+    margin-left: 24px;
+  }
+}
+
+.infoText {
+  font-size: 14px;
+}
+
+.nextButton {
+  display: flex;
+  margin-top: 64px;
+
+  color: var(--color-highlight);
+  font-weight: bold;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+}
+
+.icon {
+  margin-right: 8px;
+}

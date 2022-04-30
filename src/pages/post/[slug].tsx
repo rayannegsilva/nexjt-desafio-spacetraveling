@@ -172,7 +172,7 @@ export const getStaticProps = async ({params }) => {
     first_publication_date: response.first_publication_date,
     last_publication_date: response.last_publication_date,
     data: {
-      title: response.data.title,
+      title: RichText.asText(response.data.title), // Precisa tirar o RichText para que passe no testes.
       subtitle: response.data.subtitle,
       author: response.data.author,
       banner: {
